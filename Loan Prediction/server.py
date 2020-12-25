@@ -25,6 +25,5 @@ def predict():
 
 if __name__ ==  "__main__":
     port= int(os.environ.get('PORT', 5000))
-    print("Starting python flask server for Loan prediction...")
     utils.load_saved_artifacts()
     app.run(port= port, debug= True, use_reloader= False)

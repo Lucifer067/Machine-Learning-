@@ -53,7 +53,6 @@ def get_prediction(gender, married, education, credit_history, dependents, prope
         return "Loan will be granted."
 
 def load_saved_artifacts():
-    print("Loading saved artifacts...start")
     global __prop_area
     global __dependents
     global __data_columns
@@ -68,7 +67,6 @@ def load_saved_artifacts():
     
     with open('f:/Loan Prediction/Server/artifacts/loan_predictor.pickle', 'rb') as f:
         __model = pickle.load(f)
-    print("Loading saved artifacts...done")
 
 def get_prop_area():
     return __prop_area
